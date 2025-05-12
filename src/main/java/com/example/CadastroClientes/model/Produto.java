@@ -1,6 +1,7 @@
 package com.example.CadastroClientes.model;
 
 import jakarta.persistence.*;
+import java.util.List;
 
 @Entity
 @Table (name = "tb_produto")
@@ -12,6 +13,9 @@ public class Produto {
     private String nome;
     private String descricao;
     private double preco;
+
+    @OneToMany(mappedBy = "produto")
+    private List<Cliente> cliente;
 
     public Produto() {
     }
