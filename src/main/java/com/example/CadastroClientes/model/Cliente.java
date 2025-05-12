@@ -15,6 +15,10 @@ public class Cliente {
     private String telefone;
     private String endereco;
 
+    @ManyToOne
+    @JoinColumn (name = "id_produto")
+    private Produto produto;
+
 
     public Cliente() {
     }
