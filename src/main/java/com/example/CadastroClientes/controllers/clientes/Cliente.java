@@ -1,13 +1,12 @@
-package com.example.CadastroClientes.controllers;
+package com.example.CadastroClientes.controllers.clientes;
 
-import jakarta.persistence.*;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping
-public class ClienteController {
+public class Cliente {
 
     @GetMapping("/cliente")
     public String cliente() {
