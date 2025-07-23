@@ -1,4 +1,4 @@
-package com.example.CadastroClientes.controllers.produtos;
+package com.example.CadastroClientes.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping
-public class Produto {
+public class ProductController {
 
-    @GetMapping("/produto")
+    @GetMapping("/product")
     public String produto() {
         return "Detalhes do produto: ";
     }
